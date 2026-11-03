@@ -1,0 +1,155 @@
+[2026-11-03 13:32:41.417] [INFO] Over Coder 插件正在初始化...
+[2026-11-03 13:32:42.054] [INFO] I18nManager: 已加载语言包 en (369 条)
+[2026-11-03 13:32:42.055] [INFO] I18nManager: 已加载语言包 zh_CN (369 条)
+[2026-11-03 13:32:42.055] [INFO] I18nManager: 已加载语言包 ja_JP (369 条)
+[2026-11-03 13:32:42.059] [INFO] I18nManager: 初始化完成，当前语言 = zh_CN (保存的偏好 = null)
+[2026-11-03 13:32:42.059] [INFO] 数据库服务初始化成功
+[2026-11-03 13:32:42.088] [INFO] 已加载 0 个模型配置，0 个历史会话
+[2026-11-03 13:32:42.098] [WARN] 未配置活动模型，请在设置中配置 LLM 模型
+[2026-11-03 13:32:42.136] [INFO] Skills 刷新完成: 磁盘 5 个, 数据库 0 个
+[2026-11-03 13:32:42.136] [INFO] Skills 启动: 初始化完成
+[2026-11-03 13:32:42.169] [INFO] 用户未登录，跳过 Token 刷新检查
+[2026-11-03 13:32:42.170] [INFO] Over Code 插件初始化完成
+[2026-11-03 13:52:03.828] [INFO] Skiko [timing] awaitInit: already done, 0ms wait
+[2026-11-03 13:52:04.707] [INFO] WebpResourceLoader: 成功加载 WebP 资源 image/idle.webp，大小 3606856 bytes
+[2026-11-03 13:52:04.900] [INFO] WebpResourceLoader: 成功加载 WebP 资源 image/thinking.webp，大小 1801410 bytes
+[2026-11-03 13:52:04.908] [INFO] WebpResourceLoader: 成功加载 WebP 资源 image/searching.webp，大小 1958904 bytes
+[2026-11-03 13:52:04.913] [INFO] WebpResourceLoader: 成功加载 WebP 资源 image/editing.webp，大小 922868 bytes
+[2026-11-03 13:52:12.773] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 13:52:16.113] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 13:52:33.650] [INFO] Skiko [timing] awaitInit: already done, 0ms wait
+[2026-11-03 13:54:58.099] [INFO] [MCP-Manager] getAllTools() returns empty: MCP globally disabled
+[2026-11-03 13:54:58.159] [INFO] AnimationOverlay: 开始播放 THINKING
+[2026-11-03 13:54:59.010] [ERROR] HTTP 400 Bad Request: {"code":20012,"message":"Model does not exist. Please check it carefully.","data":null}
+[2026-11-03 13:54:59.012] [ERROR] OpenAI 兼容流式请求失败: LLM API 响应错误: 400 Bad Request, 详情: {"code":20012,"message":"Model does not exist. Please check it carefully.","data":null}
+com.github.bboygf.over_code.llm.LLMException: LLM API 响应错误: 400 Bad Request, 详情: {"code":20012,"message":"Model does not exist. Please check it carefully.","data":null}
+	at com.github.bboygf.over_code.llm.OpenAICompatibleProvider$executeChatStream$3.invokeSuspend(OpenAICompatibleProvider.kt:488)
+	at com.github.bboygf.over_code.llm.OpenAICompatibleProvider$executeChatStream$3.invoke(OpenAICompatibleProvider.kt)
+	at com.github.bboygf.over_code.llm.OpenAICompatibleProvider$executeChatStream$3.invoke(OpenAICompatibleProvider.kt)
+	at io.ktor.client.statement.HttpStatement.execute(HttpStatement.kt:50)
+	at io.ktor.client.statement.HttpStatement$execute$1.invokeSuspend(HttpStatement.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.SoftLimitedDispatcher$Worker.run(SoftLimitedDispatcher.kt:130)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:610)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:1188)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:775)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:762)
+
+[2026-11-03 13:54:59.013] [ERROR] LLM 调用产生异常
+com.github.bboygf.over_code.llm.LLMException: 调用OpenAI兼容API失败: LLM API 响应错误: 400 Bad Request, 详情: {"code":20012,"message":"Model does not exist. Please check it carefully.","data":null}
+	at com.github.bboygf.over_code.llm.OpenAICompatibleProvider$chatStream$3.invokeSuspend(OpenAICompatibleProvider.kt:330)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.SoftLimitedDispatcher$Worker.run(SoftLimitedDispatcher.kt:130)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:610)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:1188)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:775)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:762)
+Caused by: com.github.bboygf.over_code.llm.LLMException: LLM API 响应错误: 400 Bad Request, 详情: {"code":20012,"message":"Model does not exist. Please check it carefully.","data":null}
+	at com.github.bboygf.over_code.llm.OpenAICompatibleProvider$executeChatStream$3.invokeSuspend(OpenAICompatibleProvider.kt:488)
+	at com.github.bboygf.over_code.llm.OpenAICompatibleProvider$executeChatStream$3.invoke(OpenAICompatibleProvider.kt)
+	at com.github.bboygf.over_code.llm.OpenAICompatibleProvider$executeChatStream$3.invoke(OpenAICompatibleProvider.kt)
+	at io.ktor.client.statement.HttpStatement.execute(HttpStatement.kt:50)
+	at io.ktor.client.statement.HttpStatement$execute$1.invokeSuspend(HttpStatement.kt)
+	... 8 more
+
+[2026-11-03 13:54:59.027] [INFO] AnimationOverlay: 立即停止可打断动画 THINKING
+[2026-11-03 13:55:01.622] [INFO] WebpResourceLoader: image/thinking.webp 全帧解码完成，共 88 帧
+[2026-11-03 13:55:16.086] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 13:55:17.263] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 13:55:18.732] [INFO] Skiko [timing] awaitInit: already done, 0ms wait
+[2026-11-03 13:55:43.143] [INFO] Skills 启动: 开始初始化...
+[2026-11-03 13:55:43.143] [INFO] Over Coder 插件正在初始化...
+[2026-11-03 13:55:43.267] [INFO] I18nManager: 已加载语言包 en (369 条)
+[2026-11-03 13:55:43.267] [INFO] I18nManager: 已加载语言包 zh_CN (369 条)
+[2026-11-03 13:55:43.267] [INFO] I18nManager: 已加载语言包 ja_JP (369 条)
+[2026-11-03 13:55:43.270] [INFO] I18nManager: 初始化完成，当前语言 = zh_CN (保存的偏好 = zh_CN)
+[2026-11-03 13:55:43.270] [INFO] 数据库服务初始化成功
+[2026-11-03 13:55:43.273] [INFO] 已加载 1 个模型配置，3 个历史会话
+[2026-11-03 13:55:43.275] [INFO] 当前使用模型: 硅基DeepSeek (openai)
+[2026-11-03 13:55:43.279] [INFO] 用户未登录，跳过 Token 刷新检查
+[2026-11-03 13:55:43.279] [INFO] Over Code 插件初始化完成
+[2026-11-03 13:55:43.280] [INFO] Skills 刷新完成: 磁盘 5 个, 数据库 5 个
+[2026-11-03 13:55:43.280] [INFO] Skills 启动: 初始化完成
+[2026-11-03 13:55:45.480] [INFO] Skiko [timing] awaitInit: already done, 0ms wait
+[2026-11-03 13:55:45.521] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 13:55:47.227] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 13:55:49.000] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 13:55:50.082] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 13:55:56.254] [INFO] Skiko [timing] awaitInit: already done, 0ms wait
+[2026-11-03 13:57:29.207] [INFO] Skiko [timing] awaitInit: already done, 0ms wait
+[2026-11-03 13:58:16.049] [INFO] [MCP-Manager] getAllTools() returns empty: MCP globally disabled
+[2026-11-03 13:58:16.049] [INFO] AnimationOverlay: 开始播放 THINKING
+[2026-11-03 13:58:16.111] [INFO] WebpResourceLoader: image/thinking.webp 全帧解码完成，共 88 帧
+[2026-11-03 13:58:19.405] [INFO] Token usage callback: input=3249, output=45, total=3294
+[2026-11-03 13:58:19.410] [INFO] TokenUsageService.saveUsage called: sessionId=session_1793685136099_3978, model=deepseek-ai/DeepSeek-V3, tokens=3294
+[2026-11-03 13:58:19.420] [INFO] TokenUsageService.saveUsage completed
+[2026-11-03 13:58:19.421] [INFO] Token usage saved to database
+[2026-11-03 13:58:19.446] [INFO] AnimationOverlay: 立即停止可打断动画 THINKING
+[2026-11-03 13:58:19.481] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 13:59:45.240] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 14:00:34.578] [INFO] [MCP-Manager] getAllTools() returns empty: MCP globally disabled
+[2026-11-03 14:00:34.578] [INFO] AnimationOverlay: 开始播放 THINKING
+[2026-11-03 14:00:34.695] [INFO] WebpResourceLoader: image/thinking.webp 全帧解码完成，共 88 帧
+[2026-11-03 14:01:00.194] [INFO] Token usage callback: input=3516, output=762, total=4278
+[2026-11-03 14:01:00.196] [INFO] TokenUsageService.saveUsage called: sessionId=session_1793685600724_8798, model=deepseek-ai/DeepSeek-V3, tokens=4278
+[2026-11-03 14:01:00.206] [INFO] TokenUsageService.saveUsage completed
+[2026-11-03 14:01:00.206] [INFO] Token usage saved to database
+[2026-11-03 14:01:00.219] [INFO] AnimationOverlay: 立即停止可打断动画 THINKING
+[2026-11-03 14:01:00.257] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 14:01:28.235] [INFO] [MCP-Manager] getAllTools() returns empty: MCP globally disabled
+[2026-11-03 14:01:28.235] [INFO] AnimationOverlay: 开始播放 THINKING
+[2026-11-03 14:01:28.280] [INFO] WebpResourceLoader: image/thinking.webp 全帧解码完成，共 88 帧
+[2026-11-03 14:01:43.459] [INFO] Token usage callback: input=6254, output=389, total=6643
+[2026-11-03 14:01:43.462] [INFO] TokenUsageService.saveUsage called: sessionId=session_1793685600724_8798, model=deepseek-ai/DeepSeek-V3, tokens=6643
+[2026-11-03 14:01:43.471] [INFO] TokenUsageService.saveUsage completed
+[2026-11-03 14:01:43.471] [INFO] Token usage saved to database
+[2026-11-03 14:01:43.481] [INFO] AnimationOverlay: 打断 THINKING，立即切换到 EDITING
+[2026-11-03 14:01:43.482] [INFO] [MCP-Manager] getAllTools() returns empty: MCP globally disabled
+[2026-11-03 14:01:43.486] [INFO] 调用工具，创建文件或目录
+[2026-11-03 14:01:43.516] [INFO] AnimationOverlay: 收到停止信号，等 EDITING 循环完成
+[2026-11-03 14:01:43.537] [INFO] AnimationOverlay: EDITING 不可打断，待切换到 THINKING
+[2026-11-03 14:01:44.091] [INFO] WebpResourceLoader: image/editing.webp 全帧解码完成，共 50 帧
+[2026-11-03 14:01:46.368] [INFO] AnimationOverlay: 切换到 THINKING
+[2026-11-03 14:01:46.395] [INFO] WebpResourceLoader: image/thinking.webp 全帧解码完成，共 88 帧
+[2026-11-03 14:01:48.616] [INFO] Token usage callback: input=6654, output=102, total=6756
+[2026-11-03 14:01:48.618] [INFO] TokenUsageService.saveUsage called: sessionId=session_1793685600724_8798, model=deepseek-ai/DeepSeek-V3, tokens=6756
+[2026-11-03 14:01:48.627] [INFO] TokenUsageService.saveUsage completed
+[2026-11-03 14:01:48.627] [INFO] Token usage saved to database
+[2026-11-03 14:01:48.635] [INFO] [MCP-Manager] getAllTools() returns empty: MCP globally disabled
+[2026-11-03 14:01:48.635] [INFO] AnimationOverlay: 打断 THINKING，立即切换到 EDITING
+[2026-11-03 14:01:48.637] [INFO] 调用智能文本替换工具: C:/Users/alonglove/OneDrive/系统文件/grade-management-javaee/grade-management-javaee/src/main/resources/application.properties
+[2026-11-03 14:01:48.642] [INFO] SmartReplace: 成功找到唯一匹配项，执行替换
+[2026-11-03 14:01:48.695] [INFO] WebpResourceLoader: image/editing.webp 全帧解码完成，共 50 帧
+[2026-11-03 14:01:48.696] [INFO] AnimationOverlay: 收到停止信号，等 EDITING 循环完成
+[2026-11-03 14:01:48.712] [INFO] AnimationOverlay: EDITING 不可打断，待切换到 THINKING
+[2026-11-03 14:01:50.953] [INFO] AnimationOverlay: 切换到 THINKING
+[2026-11-03 14:01:50.985] [INFO] WebpResourceLoader: image/thinking.webp 全帧解码完成，共 88 帧
+[2026-11-03 14:02:09.768] [INFO] Token usage callback: input=6950, output=657, total=7607
+[2026-11-03 14:02:09.770] [INFO] TokenUsageService.saveUsage called: sessionId=session_1793685600724_8798, model=deepseek-ai/DeepSeek-V3, tokens=7607
+[2026-11-03 14:02:09.786] [INFO] TokenUsageService.saveUsage completed
+[2026-11-03 14:02:09.786] [INFO] Token usage saved to database
+[2026-11-03 14:02:09.795] [INFO] [MCP-Manager] getAllTools() returns empty: MCP globally disabled
+[2026-11-03 14:02:09.795] [INFO] 调用智能文本替换工具: C:/Users/alonglove/OneDrive/系统文件/grade-management-javaee/grade-management-javaee/src/main/java/com/grade/util/DBUtil.java
+[2026-11-03 14:02:09.797] [INFO] SmartReplace: 成功找到唯一匹配项，执行替换
+[2026-11-03 14:02:09.893] [INFO] AnimationOverlay: 打断 THINKING，立即切换到 EDITING
+[2026-11-03 14:02:09.893] [INFO] AnimationOverlay: 收到停止信号，等 EDITING 循环完成
+[2026-11-03 14:02:09.914] [INFO] AnimationOverlay: EDITING 不可打断，待切换到 THINKING
+[2026-11-03 14:02:09.944] [INFO] WebpResourceLoader: image/editing.webp 全帧解码完成，共 50 帧
+[2026-11-03 14:02:12.275] [INFO] AnimationOverlay: 切换到 THINKING
+[2026-11-03 14:02:12.308] [INFO] WebpResourceLoader: image/thinking.webp 全帧解码完成，共 88 帧
+[2026-11-03 14:02:21.178] [INFO] Token usage callback: input=8402, output=239, total=8641
+[2026-11-03 14:02:21.181] [INFO] TokenUsageService.saveUsage called: sessionId=session_1793685600724_8798, model=deepseek-ai/DeepSeek-V3, tokens=8641
+[2026-11-03 14:02:21.197] [INFO] TokenUsageService.saveUsage completed
+[2026-11-03 14:02:21.197] [INFO] Token usage saved to database
+[2026-11-03 14:02:21.209] [INFO] AnimationOverlay: 立即停止可打断动画 THINKING
+[2026-11-03 14:02:21.241] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 14:03:03.473] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 14:03:06.982] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 14:03:09.510] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 14:03:15.042] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 14:03:16.099] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
+[2026-11-03 14:03:16.997] [INFO] WebpResourceLoader: image/idle.webp 全帧解码完成，共 210 帧
